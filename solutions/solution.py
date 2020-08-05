@@ -1,6 +1,12 @@
 import requests
 import geocoder
 
+
+g = geocoder.arcgis('Redlands, CA', maxRows=12)
+for result in g:
+  print(result.latlng)
+
+
 destinations = ["The Space Needle",
   "Crater Lake",
   "The Golden Gate Bridge",
